@@ -7,9 +7,4 @@ describe('Test endpoint /', () => {
         expect(res.statusCode).toEqual(200);
         expect(res.text).toBe('Hello Docker + CI/CD!');
     });
-
-    // Fermer le serveur après les tests
-    afterAll((done) => {
-        app.close(done);
-    });
 });
